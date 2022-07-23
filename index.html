@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Quote Generator is a JavaScript based website that uses an open-source API to fetch quotes and displays them randomly with the additional functionality to display time, date and day."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Clock -->
+    <div class="glass-effect">
+      <div id="clock" class="clock"></div>
+      <div id="day-and-date" class="day-and-date"></div>
+    </div>
+
+    <!-- Quote Card -->
+    <div class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"></span>
+        <i class="fas fa-quote-right"></i>
+      </div>
+
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="author"></span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-container">
+        <button id="twitter">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="social-icons">
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/niranjan-akilan/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a class="social-icon" href="https://github.com/Niranjan-A"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p class="footer-text">Made with love by Niranjan Akilan</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./time.js"></script>
+    <script src="./quotes.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
