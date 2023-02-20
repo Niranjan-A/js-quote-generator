@@ -141,7 +141,7 @@ button:active {
 }
 
 .footer {
-  background: rgba(34, 34, 34, 0.65);
+/*   background: rgba(34, 34, 34, 0.65); */
   display: flex;
   flex-direction: column;
   justify-content: center;
